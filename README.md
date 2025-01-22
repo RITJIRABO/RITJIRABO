@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @RITJIRABO
 - 👀 I’m interested in .. coding.
-- 🌱 I’m currently learning . HTML, CSS and JavaScript..
+- 🌱 I’m currently learning . HTML, CSS and JavaScript...
 - 💞️ I’m looking to collaborate on .. GitHub.
 - 📫 How to reach me ..(@ritjirabo.com.)
 Just looking for somebody that will help me
