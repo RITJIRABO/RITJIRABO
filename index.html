@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritj'sPortfolio.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylesheet_portfo.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home">
+                <img src="pictures/profile_pic.jpg" alt="Profile Picture" class="profile-pic">
+            </a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Photos">Photos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="section">
+        <p>
+        <h1>Welcome to my Portfolio</h1>
+        </p> <!-- Separate your name -->
+        <p><strong>My name is RITJI RABO MIRACLE.</strong>
+            I am a front-end developer, based in Nigeria. I'm passionate about creativity,
+            pixel-perfect, beautiful interfaces, and intuitively implemented User interfaces,you can
+            Learn more in the<a href="#about" class="about-link">about me section</a>.
+        </p>
+        <h3>These are the lists of some programming languages that I am familiar with:</h3>
+        <div class="technologies-wrapper">
+            <ul class="technologies">
+                <li><i class="fab fa-html5"></i>HTML</li>
+                <li><i class="fab fa-css3-alt"></i>CSS</li>
+                <li><i class="fab fa-js"></i>JavaScript</li>
+                <li><i class="fab fa-python"></i>Python</li>
+                <li><i class="fa fa-database"></i>SQL</li>
+            </ul>
+        </div>
+        </h3>
+    </section>
+    <section id="about" class="about_section">
+        <h1>About Me</h1>
+        <p>You can also know more about me through here:</p>
+        <div class="short_not">
+            <h4 id="about-motion-text" class="motion-text"><strong>My name is RITJI RABO MIRACLE,</strong>I have an
+                inspiration
+                about computer since when i was in my
+                primary school,
+                and my hobby is to study computer in all my acedemical status/lifetime ,and to be faithful to God ,
+                i finish my SSCE with a computer as a subject in my result, and that kept me moving to my Tech carriar,
+                and it also gave me the opportunity to fully study computer science as a course in the university,
+                You can check the contact me section,so that you can reach me at your own
+                convinience time.
+            </h4>
+        </div>
+    </section>
+
+    <section id="Photos" class="Photos-section">
+        <h1>My Photos</h1>
+        <p>Here are some of my pictures,and for easy navigation ,just go to the contact me section to get in touch wit
+            h me.</p>
+        <div class="image-gallery">
+            <div class="image-item" onclick="showImageModal('pictures/image1.jpg')">
+                <img src="pictures/image1.jpg" alt="Photos Item 1">
+            </div>
+            <div class="image-item" onclick="showImageModal('img2.jpg')">
+                <img src="img2.jpg" alt="Photos Item 2">
+            </div>
+            <div class="image-item" onclick="showImageModal('pictures/pic.jpg')">
+                <img src="pictures/pic.jpg" alt="Photos Item 3">
+            </div>
+
+            <div class="image-item" onclick="showImageModal('profilepic.jpg')">
+                <img src="profilepic.jpg" alt="Photos Item 3">
+            </div>
+            <div class="image-item" onclick="showImageModal('portfolio pic.jpg')">
+                <img src="portfolio pic.jpg" alt="Photos Item 5">
+            </div>
+            <div class="image-item" onclick="showImageModal('pictures/image4.jpg')">
+                <img src="pictures/image4.jpg" alt="Photos Item 6">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out for collaborations, projects, or just to say hi!</p>
+
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/xwppjyly?redirect=https://yourwebsite.com/thank-you" method="POST"
+            class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit" class="btn-submit">Send</button>
+        </form>
+
+        <!-- Direct Contact Information -->
+        <div class="contact-info">
+            <p>Email: <a href="mailto:miracleritjirabo00@gmail.com">miracleritjirabo00@gmail.com</a></p>
+            <p>Phone: <a href="tel:+1239114594706">+123 9114594706</a></p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <marquee behavior="slide" direction="left">
+                <h4>Connect with me through my socials media handles
+                    <img src="emoji han (8).jpeg" alt="emoji" width="50px">
+                </h4>
+            </marquee>
+            <a href="https://www.linkedin.com/in/miracle-ritji-rabo-b4a465297?utm_source" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/RITJIRABO" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://t.me/RITJI_RABO_MIRACLE" target="_blank">
+                <i class="fab fa-telegram"></i> Telegram
+            </a>
+            <a href="https://www.facebook.com/share/1W3PyNAe7J/" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://www.youtube.com/@ritjirabo7674" target="_blank">
+                <i class="fab fa-youtube"></i>Youtube
+            </a>
+            <a href="https://wa.me/message/ESTTQ6M7WW2YP1" target="_blank">
+                <i class="fab fa-whatsapp"></i>WhatsApp
+            </a>
+        </div>
+
+        <!-- Downloadable Resume -->
+        <p class="download-resume">
+            Download my resume: <a href=https://www.youtube.com/@ritjirabo7674" download>Click Here</a>
+        </p>
+
+        <!-- Newsletter Subscription -->
+        <form action="https://www.youtube.com/@ritjirabo7674" method="POST" class="newsletter-form">
+            <label for="subscribe-email">Subscribe to my newsletter:</label>
+            <input type="email" id="subscribe-email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+    </section>
+
+
+    <!-- Modal for Viewing Image -->
+    <div id="imageModal" class="modal" onclick="closeImageModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script_porfolio.js" defer></script>
+</body>
+
+</html>

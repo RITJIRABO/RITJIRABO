@@ -1,0 +1,449 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+/* Animation Keyframes */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* General Motion Text Styling */
+.motion-text {
+  animation: fadeInSlide 1.6s ease-in-out;
+}
+
+/* Optional: Apply to All Text */
+h1,
+h4,
+p,
+li {
+  animation: fadeInSlide 1.7s ease-in-out;
+}
+/* Keyframes for Fade-In and Slide-Up Animation */
+@keyframes delayedFadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Initial State for the H4 Text */
+#about-motion-text {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+}
+
+/* Animation Class */
+.animate-motion {
+  animation: delayedFadeInSlide 1s ease forwards;
+}
+
+/* Ensure Smooth Loading */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Consistent spacing */
+  margin-right: 3rem;
+}
+.nav-links li {
+  margin-left: 0;
+}
+/* Technologies List Styling */
+.technologies {
+  position: relative; /* Keep relative positioning for placement adjustments */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #cf8888;
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+  text-align: right; /* Align text to the left */
+}
+
+.technologies-wrapper {
+  display: flex;
+  justify-content: flex-start; /* Align the list to the right */
+  margin-right: 2rem; /* Space from the edge */
+}
+
+.technologies li {
+  display: flex;
+  align-items: center; /* Vertically align icons and text */
+  margin: 10px 0;
+}
+
+.technologies li i {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 1.5rem; /* Icon size */
+  color: #ff9800; /* Icon color */
+}
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+.nav-links a:hover {
+  color: #ff9800; /* Change color on hover */
+}
+.section {
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+.about_section {
+  padding: 20px;
+  text-align: center;
+}
+/* General Section Styling */
+.contact-section,
+.Photos-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.contact-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.contact-form,
+.newsletter-form {
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+.contact-form label,
+.newsletter-form label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.newsletter-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.btn-submit,
+.btn-subscribe {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover,
+.btn-subscribe:hover {
+  background-color: #0056b3;
+}
+
+/* Contact Info */
+.contact-info {
+  margin: 20px auto;
+  text-align: left;
+  font-size: 1.1em;
+  max-width: 500px; /* Limits the width for neat alignment */
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  display: block; /* Forces each link to its own line */
+  margin: 5px 0;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Social Links */
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #007bff;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #0056b3;
+}
+
+/* Download Resume Link Styling */
+.download-resume {
+  margin-top: 20px;
+  font-size: 1.1em;
+  text-align: center; /* Center-align the link */
+}
+
+.download-resume a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.download-resume a:hover {
+  text-decoration: underline;
+}
+
+/* Image Gallery Styling */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  object-fit: contain;
+}
+
+.image-item {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-item:hover {
+  transform: scale(1.1);
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Profile Picture in Logo */
+.profile-pic {
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  border-radius: 50%; /* Circular image */
+  margin-right: 10px; /* Space between image and text */
+  border: 2px solid #ffffff; /* Optional border for better visibility */
+}
+/* Center content in the Home section */
+#home {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center align text */
+  min-height: 100vh; /* Full-screen height */
+  background-color: #282c34; /* Background color for the Home section */
+  color: #ffffff; /* Text color */
+  padding: 35px; /* Reduce the overall padding of the section */
+}
+
+/* Styling for the name */
+#home p:first-of-type {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Styling for paragraph text */
+#home p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+  color: #ffffff;
+}
+#home h1 {
+  margin-bottom: 10px; /* Reduce the space below the heading */
+  font-size: 2rem; /* Adjust font size (optional) */
+}
+/* Styling for "about me" link */
+.about-link {
+  color: #ff9800; /* Make the link visually distinct */
+  text-decoration: underline; /* Add underline to indicate it's a link */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.about-link:hover {
+  color: #ffcc66; /* Change color on hover */
+}
+
+#about {
+  background-color: #f4f4f4;
+  color: #333;
+}
+#Photos {
+  background-color: #ddd;
+  color: #333;
+}
+#contact {
+  background-color: #ccc;
+  color: #333;
+}
+.section h1 {
+  color: inherit; /* Use section's text color */
+}
+i {
+  font-size: 24px;
+  color: #333;
+  margin-right: 10px;
+}
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  top: 1rem; /* Distance from the top */
+  margin-right: 1.6rem; /* Distance from the right */
+}
+
+/* Hide the nav-links by default */
+.nav-links {
+  flex-direction: row;
+  align-items: center;
+  display: flex; /* Initially hidden */
+  background-color: #333;
+  position: static;
+  top: 60px;
+  right: 0;
+  width: auto;
+  margin-right: 1.6rem; /* Remove margin for smaller screens */
+  padding: 1rem; /* Center links in the dropdown */
+}
+
+/* Show menu when toggled */
+.nav-links.show {
+  display: flex; /* Show menu links */
+}
+
+/* Adjust links for small screens */
+.nav-links li {
+  margin: 10px 0;
+  text-align: center; /* Center align text */
+}
+
+/* Responsive Design for Tablets and Smaller Screens */
+/* Responsive: Mobile Styling */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show toggle button on smaller screens */
+  }
+
+  .nav-links {
+    display: none; /* Hide menu by default */
+    flex-direction: column; /* Stack items vertically */
+    background-color: #333; /* Dropdown background color */
+    position: absolute; /* Position dropdown */
+    top: 60px; /* Dropdown below navbar */
+    right: 0;
+    width: 100%; /* Full width dropdown */
+    padding: 1rem; /* Padding for dropdown */
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show menu when toggled */
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* Space between items */
+    text-align: center; /* Center align text */
+  }
+}
